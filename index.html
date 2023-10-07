@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <div>
+        <nav id="navbar"></nav>
+        <header>Python Documentation</header>
+      </div>
+      <section class="main-section" id="Introduction_to_Python">
+        <header>Introduction to Python</header>
+        <p>
+          Python is a high-level, dynamically typed programming language known
+          for its simplicity and readability. Developed by Guido van Rossum in
+          the late 1980s, Python has gained immense popularity in various
+          domains, including web development, data analysis, machine learning,
+          and more.
+        </p>
+        <p>
+          It emphasizes code readability and a clean, easy-to-understand syntax,
+          making it an excellent choice for both beginners and experienced
+          programmers. To get started with Python, you can download and install
+          it from the official website (python.org) or use a Python distribution
+          like Anaconda for data science applications.
+        </p>
+        <ul>
+          <li>Overview of Python</li>
+          <li>History of Python</li>
+          <li>Python's popularity and use cases</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Python_Basics">
+        <header>Python Basics</header>
+        <p>
+          Python offers a wide range of data types, including integers, floats,
+          strings, lists, tuples, dictionaries, and sets. Variables allow you to
+          store and manipulate data, while operators and expressions enable you
+          to perform mathematical and logical operations.
+        </p>
+        <ul>
+          <li>
+            Data types (integers, floats, strings, lists, tuples, dictionaries,
+            sets)
+          </li>
+          <li>Variables and assignment</li>
+          <li>Operators and expressions</li>
+        </ul>
+
+        <code
+          ># Data Types integer_variable = 42 float_variable = 3.14
+          string_variable = "Hello, World!"
+        </code>
+      </section>
+      <section class="main-section" id="Functions_and_Modules">
+        <header>Functions and Modules</header>
+        <p>
+          In Python, you can define functions to encapsulate reusable blocks of
+          code. Functions can have parameters and return values, enhancing code
+          modularity and reusability. Python's standard library provides
+          numerous modules that offer pre-built functionality, while you can
+          also create your own custom modules to organize your code efficiently.
+        </p>
+      </section>
+      <section class="main-section" id="Object-Oriented_Programming">
+        <header>Object-Oriented Programming</header>
+        <p>
+          Python supports object-oriented programming, allowing you to create
+          and manipulate objects with attributes and methods. Classes serve as
+          blueprints for objects, facilitating code organization and reuse.
+          Inheritance and polymorphism enable you to create hierarchies of
+          related classes and achieve code flexibility.
+        </p>
+        <code
+          >class Person: def __init__(self, name, age): self.name = name
+          self.age = age def greet(self): return f"Hello, my name is {self.name}
+          and I am {self.age} years old."
+        </code>
+      </section>
+      <section class="main-section" id="File_Handling">
+        <header>File Handling</header>
+        <p>
+          Python provides robust file handling capabilities for reading from and
+          writing to files. You can work with both text and binary files using
+          the built-in open() function, and Python's context managers make it
+          easy to handle resources efficiently.
+        </p>
+        <code
+          ># Writing to a text file with open("example.txt", "w") as file:
+          file.write("Hello, this is a sample text.\n")</code
+        >
+      </section>
+      <section class="main-section" id="Exception_Handling">
+        <header>Exception Handling</header>
+        <p>
+          In Python, exceptions are used to handle runtime errors gracefully.
+          You can catch and handle exceptions using try and except blocks, which
+          allows your program to recover from errors and continue executing.
+          Python also supports raising custom exceptions to provide meaningful
+          error messages.
+        </p>
+        <code
+          ># Handling multiple exceptions try: value = int("abc") # ValueError:
+          invalid literal for int() except ValueError as e: print(f"ValueError:
+          {e}") except Exception as e: print(f"An unexpected error occurred:
+          {e}")
+        </code>
+      </section>
+      <section class="main-section" id="Libraries_and_Frameworks">
+        <header>Libraries and Frameworks</header>
+        <p>
+          Python's extensive ecosystem includes a wealth of libraries and
+          frameworks that extend its capabilities. Libraries like NumPy for
+          numerical computing, Pandas for data manipulation, and Matplotlib for
+          data visualization are widely used in data science. In web
+          development, Flask and Django are popular frameworks for building web
+          applications.
+        </p>
+        <code
+          >import numpy as np # Creating a NumPy array arr = np.array([1, 2, 3,
+          4, 5])
+        </code>
+      </section>
+      <section class="main-section" id="Best_Practices_and_Tips">
+        <header>Best Practices and Tips</header>
+        <p>
+          To write maintainable Python code, it's essential to follow best
+          practices and coding conventions outlined in PEP 8, Python's style
+          guide. Writing clean and readable code not only aids collaboration but
+          also eases debugging.
+        </p>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>For more information visit <a href=""></a></p>
+      </section>
+    </main>
+  </body>
 </html>
